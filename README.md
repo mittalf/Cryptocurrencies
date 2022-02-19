@@ -31,12 +31,20 @@ Unsupervised machine learning technique is used to discover patterns or groups i
 
 - First data is  pre-processed to remove unnecessary columns and rows with null values and strings data type is converted into numerical data.
 - Then Standard Scalar is used to standardize the features.  Once the data is standardized, PCA is used to reduce the dimensions to 3 principal components. PCA model is fit and trained. 
-= Then best number of centroids for K-Means is determined by plotting Elbow Curve. Since the elbow curve showed that 4 clusters will be most useful, K-Means model is created with 4 clustered and fitted and predictions are made.  
+- Then best number of centroids for K-Means is determined by plotting Elbow Curve. Since the elbow curve showed that 4 clusters will be most useful, K-Means model is created with 4 clustered and fitted and predictions are made.  
 
 To visualize the results:
-- Using Plotly Express and hvplot, a 3-d scatter plot is created with PCA data to visualize the distinct group that corresponds to the 3 principal components.  
+- Using Plotly Express and hvplot, a 3-d scatter plot is created with PCA data to visualize the 
+distinct group that corresponds to the 3 principal components.  
+
+![Scatter3DPCAComps.PNG](Scatter3DPCAComps.PNG)
+
 - A table is created which shows all the currently tradeable cryptocurrencies 
+![cryptocurrencytable.PNG](cryptocurrencytable.PNG)
+
 - A scatter plot is created to visualize the TotalCoinSupply and TotalCoinsMined data after applying the Min_Max Scaler algorithm to scale the data between 0 and 1. 
+
+![ScatterMinMaxScaled.PNG](ScatterMinMaxScaled.PNG)
 
 
 
